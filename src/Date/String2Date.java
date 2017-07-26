@@ -58,11 +58,11 @@ public static void main(String args[]) throws ParseException{
         System.out.println("Date from dd-MM-yyyy:HH:mm:SS String in Java : " 
                             + convertedDate);
         
-        /*Confusion between “m” and “M”, 
-         * small case “m” represent minutes 
-         * while “M” represent Month 
-         * Also “d” represent date in month 
-         * while “D” represent Day of week. 
+        /*Confusion between â€œmâ€ and â€œMâ€, 
+         * small case â€œmâ€ represent minutes 
+         * while â€œMâ€ represent Month 
+         * Also â€œdâ€ represent date in month 
+         * while â€œDâ€ represent Day of week. 
          */
    }
 

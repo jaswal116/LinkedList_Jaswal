@@ -4,7 +4,7 @@ import java.util.StringTokenizer;
 
 public class SplitString {
 	
-	// 2 ways to Split String in Java – split() & StringTokenizer class
+	// 2 ways to Split String in Java â€“ split() & StringTokenizer class
 	
 	public static void main(String[] args) {
 		

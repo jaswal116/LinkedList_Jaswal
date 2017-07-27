@@ -60,5 +60,9 @@ public class fibonacciSeries {
 		
 		return sum;
 	}
-
+	
 }
+Output
+FibonacciSeries : 0 1 1 2 3 5 8 13 21 34 
+sum of fibonacci series <10 : 233
+sum of even valued fibonacci : 4613732

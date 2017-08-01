@@ -17,3 +17,7 @@ public class HashmapValuesKeyset {
 		 }
 	}
 }
+output
+Loan type : car loan, Provider : td bank
+Loan type : home loan, Provider : citibank
+Loan type : personal loan, Provider : Wells Fargo

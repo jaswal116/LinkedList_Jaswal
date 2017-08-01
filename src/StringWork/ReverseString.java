@@ -65,3 +65,8 @@ public class ReverseString {
 	}
 
 }
+Output
+Reverse of 'are you still working' is : gnikrow llits uoy era
+Reverse of 'are you fighting' is : gnithgif uoy era
+Reverse of 'i am sleeping' : gnipeels ma i
+Reverse of 'why to sleep' : peels ot yhw

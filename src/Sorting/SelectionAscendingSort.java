@@ -1,7 +1,15 @@
 package sorting;
 
 public class SelectionAscendingSort {
+	
+	// The algorithm proceeds by finding the smallest element in the unsorted subarray, 
+	// swapping it with the leftmost unsorted element (putting it in sorted order), 
+	// and moving the subarray boundaries one element to the right.
+	// The algorithm divides the input array into two parts:
+	// 1: the subarray of items already sorted, which is built up from left to right, and 
+	// 2: the subarray of items remaining to be sorted that occupy the rest of the array.
 
+	
 	public static void main(String[] args) {
 		SelectionAscendingSort sc = new SelectionAscendingSort();
 		int[] x = { 1, 5, 7, 3, 4, 6, 8, 9 };

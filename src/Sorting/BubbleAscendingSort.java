@@ -1,7 +1,10 @@
 package sorting;
 
 public class BubbleAscendingSort {
-
+	
+	// Bubble sort algorithm compares each pair of adjacent elements and swaps them if they are in the wrong order. 
+	// The pass through the array is repeated until no swaps are needed, which indicates that the array is sorted.
+	
 	public static void main(String[] args) {
 		BubbleAscendingSort bg = new BubbleAscendingSort();
 		int[] x = { 1, 5, 7, 3, 4, 6, 8, 9 };

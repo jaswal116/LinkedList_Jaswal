@@ -1,7 +1,9 @@
 package sorting;
 
 public class InsertionAscendingSort {
-
+	
+	// sorting is done by picking one array element at a time and inserting it into already sorted subarray.
+	
 	public static void main(String[] args) {
 		InsertionAscendingSort bg = new InsertionAscendingSort();
 		int[] x = { 11,3,4,5,7, 21, 24, 56, 12, 6, 8, 9,1 };

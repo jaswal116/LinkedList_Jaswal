@@ -3,7 +3,7 @@ package sorting;
 public class MergeSorting {
 
 	public static void main(String[] args) {
-		int[] x = { 91, 95, 71, 23, 54, 16, 8, 9, 16, 85,	 };
+		int[] x = { 91, 95, 71, 23, 54, 16, 8, 9, 16, 85 };
 		mergeSort(x);
 		System.out.println();
 		for (int i : x) {

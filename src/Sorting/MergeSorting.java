@@ -1,5 +1,6 @@
 package sorting;
 
+	// This merge sorting avoid using infinity and mergeSort() has a single array as input
 public class MergeSorting {
 
 	public static void main(String[] args) {

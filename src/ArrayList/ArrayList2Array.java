@@ -23,3 +23,7 @@ public class ArrayList2Array {
 	}
 
 }
+-->
+Actual ArrayList: [apple, mango, orange, banana]
+Created Array Content 
+apple mango orange banana 

@@ -22,3 +22,6 @@ public class AddList2ArrayList {
 	}
 
 }
+-->
+Actual ArrayList: [apple, mango, orange, banana]
+New ArrayList: [apple, mango, orange, banana, litchi, tomato]

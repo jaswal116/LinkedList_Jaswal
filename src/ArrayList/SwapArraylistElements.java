@@ -2,6 +2,8 @@ package ArrayListCode;
 
 import java.util.ArrayList;
 import java.util.Collections;
+         // Swap the index of two elements in the arraylist
+
 
 public class SwapArraylistElements {
 
@@ -21,3 +23,6 @@ public class SwapArraylistElements {
 	}
 
 }
+-->
+Original list: [apple, mango, orange, banana, litchi, pear]
+After swap list: [pear, mango, orange, banana, litchi, apple]

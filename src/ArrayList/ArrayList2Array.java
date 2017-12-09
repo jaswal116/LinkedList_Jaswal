@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ArrayList2Array {
 	/*
-	 * copy ArrayList to array
+	 * copy String of ArrayList to String of array
 	 */
 	public static void main(String[] args) {
 		ArrayList<String> al = new ArrayList<String>();

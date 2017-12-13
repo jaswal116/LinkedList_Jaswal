@@ -18,7 +18,7 @@ public class MergeSorting {
 		if (1== n) {
 			return ;
 		}
-		// created two arrays
+		// else created two arrays
 		int[] b = new int[mid];
 		int[] c = new int[n-mid];
 		for (int i = 0; i < mid; i++) {

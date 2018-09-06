@@ -13,6 +13,9 @@ public static void main(String args[]) throws ParseException{
         DateFormat formatter = null;
         Date convertedDate = null;
         
+	//Class - SimpleDateFormat
+	//method - parse(str): convert String to date
+	
        // Creating SimpleDateFormat with yyyyMMdd format e.g."20110914"
         String yyyyMMdd = "20110914";
         formatter =new SimpleDateFormat("yyyyMMdd");

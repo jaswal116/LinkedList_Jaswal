@@ -1,0 +1,30 @@
+public class ImplementParseInt {
+
+	/*Integer class contains a static method parseInt(String args) , 
+	 *Way of Calling this method is:    
+	 *int a= Integer.parseInt(String args); 
+	 *Difference between parseInt() and valueOf():
+	 *parseInt() parses the string and returns the primitive integer type. 
+	 *However, valueOf() returns an Integer object.
+	 */
+	public static int convertString2Integer(String str) {
+		char[] ch = str.toCharArray();
+		int sum=0;
+		//get ascii value for zero
+        int zeroAscii = (int)'0';
+        for (char c : ch) {
+        	//get ascii value for c
+        	int tmpAscii = (int)c;
+        	// multiply previous sum by 10 & add difference from 0
+			sum = (sum*10) + (tmpAscii - zeroAscii);
+		}
+		return sum ;
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println(ImplementParseInt.convertString2Integer("cfbkdbf"));
+		System.out.println(ImplementParseInt.convertString2Integer("kjds"));
+		System.out.println(ImplementParseInt.convertString2Integer("fdhj"));
+	}
+}

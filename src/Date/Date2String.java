@@ -9,7 +9,10 @@ public class Date2String {
 		
 		//Creating Date in java with today's date.
 		Date dateNow = new Date();
-
+		
+		//class - SimpleDateFormat
+		//method - format(dateNow) : convert date to String
+		
 		//change date into string yyyyMMdd format example "20110914"
 		SimpleDateFormat dateformatyyyyMMdd = new SimpleDateFormat("yyyyMMdd");
 		String date_to_string = dateformatyyyyMMdd.format(dateNow);

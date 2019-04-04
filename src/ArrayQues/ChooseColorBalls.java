@@ -1,4 +1,7 @@
-package ArrayQues;
+Task description
+
+Choose a particular colour balls from an array of different colour balls
+
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,0 +1,36 @@
+public class ReadColDataInExcel {
+	
+	//read data in a column with column name
+
+	public static void main(String[] args) {
+		File file = new File("read.xlsx");
+		FileInputStream fis;
+		XSSFWorkbook wb;
+		XSSFSheet sheet;
+		XSSFRow row;
+		 try {
+			fis = new FileInputStream(file);
+			wb = new XSSFWorkbook(fis);
+			sheet = wb.getSheet("check");
+			row = sheet.getRow(0);
+			int totalRows = sheet.getLastRowNum();
+			int totalCol = row.getLastCellNum();
+			int colNum = -1;
+			String 	Password = "";
+			for (int i = 0; i < totalCol; i++) {
+				if (row.getCell(i).getStringCellValue().trim().equals("Password")) {
+					colNum = i;
+				}
+			}
+			for (int j = 1; j < totalRows; j++) {
+					Password = sheet.getRow(j).getCell(colNum).getStringCellValue();
+					System.out.println(Password);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

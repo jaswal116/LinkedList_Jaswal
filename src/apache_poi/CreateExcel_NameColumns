@@ -1,0 +1,35 @@
+public class CreateExcel_NameColumns {
+	
+	// create an excel sheet & add data in columns
+
+	public static void main(String[] args)  {
+		File file = new File("read.xlsx");
+		
+		FileOutputStream fos;
+		XSSFWorkbook wb;
+		XSSFSheet sheet;
+		XSSFRow row;
+		XSSFCell cell;
+		try {
+			fos = new FileOutputStream(file);
+		
+		 wb = new XSSFWorkbook();
+		 sheet = wb.createSheet("check");
+		 row = sheet.createRow(0);
+		 cell = row.createCell(0);
+		cell.setCellValue("Username");
+		 cell = row.createCell(1);
+		cell.setCellValue("Password");
+		for (int i = 1; i < 10; i++) {
+			sheet.createRow(i).createCell(0).setCellValue("munish"+i);
+			sheet.getRow(i).createCell(1).setCellValue("Password"+i);
+		}
+		wb.write(fos);
+		wb.close();
+		fos.close();	
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

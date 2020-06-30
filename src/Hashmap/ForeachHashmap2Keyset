@@ -1,0 +1,17 @@
+import java.util.HashMap;
+
+public class ForeachHashmap2Keyset {
+
+public static void main(String[] args) {
+	HashMap<String, String> hashmap2 = new HashMap<String, String>();
+	 hashmap2.put("home loan", "citibank");
+	 hashmap2.put("personal loan", "Wells Fargo");
+	 hashmap2.put("car loan", "td bank");
+	
+	 for(String key : hashmap2.keySet() ){
+		 
+		 System.out.println("Loan type : " + key + ", Provider : " + hashmap2.get(key));
+		 
+	 }
+}
+}

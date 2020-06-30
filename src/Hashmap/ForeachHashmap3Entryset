@@ -1,0 +1,17 @@
+import java.util.HashMap; import java.util.Map.Entry; import java.util.Set;
+
+public class ForeachHashmap3Entryset {
+
+public static void main(String[] args) {
+	HashMap<String, String> hashmap3 = new HashMap<String, String>();
+	 hashmap3.put("home loan", "citibank");
+	 hashmap3.put("personal loan", "Wells Fargo");
+	 hashmap3.put("car loan", "td bank");
+	
+	 Set<Entry<String, String>> entryset = hashmap3.entrySet();
+	 
+	 for(Entry<String, String> entry : entryset){
+		 System.out.println("Loantype : " + entry.getKey() + ", Provider : " + entry.getValue());
+	 }
+}
+}

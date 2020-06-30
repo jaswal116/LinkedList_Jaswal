@@ -1,0 +1,18 @@
+import java.util.HashMap; import java.util.Iterator; import java.util.Set;
+
+public class IterateHashmap1Keyset {
+
+public static void main(String[] args) {
+	HashMap<String, String> hashmap1 = new HashMap<String, String>();
+	 hashmap1.put("home loan", "citibank");
+	 hashmap1.put("personal loan", "Wells Fargo");
+	 hashmap1.put("car loan", "td bank");
+	
+	 Set<String> keyset = hashmap1.keySet();
+	 Iterator<String> it = keyset.iterator();
+	 while(it.hasNext()){
+		 String key = it.next();
+		 System.out.println("Key : " + key + ", Provider : " + hashmap1.get(key));
+	 }
+}
+}

@@ -1,0 +1,41 @@
+// Write a Java program to reverse a string.
+
+import java.util.Scanner;
+
+public class Reverse_string {
+
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from the user
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter a string
+        System.out.print("Enter a string: ");
+        String inputString = scanner.nextLine();
+
+        // Reverse the string
+        String reversedString = reverse(inputString);
+
+        // Print the reversed string
+        System.out.println("Reversed string: " + reversedString);
+
+        // Close the scanner
+        scanner.close();
+    }
+
+    private static String reverse(String str) {
+        
+        char[] ch = str.toCharArray();  // to convert string to charArray
+        int left = 0;
+        int right = ch.length-1;        // to find index of last character in charArray
+
+        while (left<right) {
+
+            char temp = ch[left];
+            ch[left] = ch[right];
+            ch[right]= temp;
+            
+            left++;
+            right--;
+        }
+        return new String(ch);
+    } 

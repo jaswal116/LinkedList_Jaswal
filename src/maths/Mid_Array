@@ -1,0 +1,35 @@
+import java.util.Random;
+public class Mid_Array {
+
+    public static void main(String[] args){
+        int[] array = new int[11];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = new Random().nextInt(1000);
+        }
+        System.out.print("Array : ");
+        printArray(array);
+        System.out.println("Middle number of the array is "+ midElement(array)+ " at index : " + findMiddleIndex(array));
+    }
+
+    private static int midElement(int[] array) {
+        int mid_index = findMiddleIndex(array);
+        return array[mid_index];
+    }
+
+    private static int findMiddleIndex(int[] array) {
+        // If the length is even, return the middle index
+        int mid_index = array.length / 2;
+        // If the length is odd, return the upper middle index
+        if(array.length %2 !=0 ){
+            mid_index = mid_index +1;
+        } 
+        return mid_index;
+    }
+
+    private static void printArray(int[] array){
+        for(int i: array){
+            System.out.print(i+ " ");
+        }
+        System.out.println("");
+    }
+}

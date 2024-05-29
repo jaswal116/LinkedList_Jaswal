@@ -1,0 +1,38 @@
+import java.util.Arrays;
+
+public class BinarySearch {
+
+    /* Binary search is a search algorithm that efficiently finds the position of a specific value (target) within a sorted array. 
+    It works by repeatedly halving the search interval until the target is located or eliminated from the search space. */
+
+    public static void main(String[] args){
+        int[] arr = {2,5,23,9,6,2,7,31,4};
+        int s = 5;
+
+        int index = SearchIndexValue(arr,s);
+        if(index != -1){
+            System.out.println("Target value " + s +" is present in the array");
+        }else {
+            System.out.println("Target Value " + s +" is not present in the array : "+Arrays.toString(arr));
+        }
+        
+    }
+
+    // search index of the value if present in array
+    private static int SearchIndexValue(int[] arr, int target){
+        Arrays.sort(arr);  // Same array get sorted and no new array is built
+        int start = 0;
+        int end = arr.length-1;
+
+        while(start<=end){
+            int mid = start + (end-start)/2;
+            if(arr[mid] == target){
+                return mid;
+            }else if(arr[mid] <target){
+                start = mid+1;
+            }else{
+                end = mid-1;
+            }
+        }
+        return -1;
+    }
